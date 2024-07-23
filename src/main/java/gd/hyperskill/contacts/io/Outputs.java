@@ -65,7 +65,7 @@ public class Outputs {
     }
 
     public void actionsForNumberOptionMenu() {
-        System.out.println("\n[record] Enter action (edit, delete, menu): ");
+        System.out.print("\n[record] Enter action (edit, delete, menu): ");
     }
 
     public void actionsForSearchOptionMenu() {
@@ -81,7 +81,7 @@ public class Outputs {
     }
 
     public void enterEditField(String filedName) {
-        System.out.print("Enter " + filedName + ": ");
+        System.out.print("Enter " + filedName.toLowerCase() + ": ");
     }
 
     public void enterSearchQuery() {
