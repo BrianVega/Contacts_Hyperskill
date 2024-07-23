@@ -11,7 +11,7 @@
   - [Package `gd.hyperskill.contacts.io`](#package-gdhyperskillcontactsio)
   - [Package `gd.hyperskill.contacts.ui`](#package-gdhyperskillcontactsui)
 - [Usage](#usage)
-  - [Starting the Game](#starting-the-game)
+  - [Starting the Application](#starting-the-application)
   - [Example steps for adding a person contact](#example-steps-for-adding-a-person-contact)
   - [Example steps for listing all data of a contact](#example-steps-for-listing-all-data-of-a-contact)
   - [Example steps for editing the data of a contact](#example-steps-for-editing-the-data-of-a-contact)
@@ -64,7 +64,7 @@ The project is organized into the following packages and classes:
 
 ## Usage
 
-### Starting the Game
+### Starting the application
 
 1. Run the `Main` class.
 2. Follow the instructions in the console to add a new contact, list all contacts, search for a contact, count all contacts, or exit the application.
