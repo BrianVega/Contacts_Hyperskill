@@ -22,7 +22,7 @@
 
 ## Description
 
-This project simulates the creation and management of a directory of contacts. The game runs in the console, offering an interactive and user-friendly experience.
+This project simulates the creation and management of a directory of contacts. The application runs in the console, offering an interactive and user-friendly experience.
 
 ## Project Structure
 
@@ -147,9 +147,9 @@ In case of a wrong user input like the ones showed below, the default value stor
     Time last edit: 2024-07-23T17:29
 ```
 
-### Exiting the directory
+### Exiting the application
 
-Enter the command `exit` to exit the game.
+Enter the command `exit` to exit the application.
 
 ## Requirements
 
