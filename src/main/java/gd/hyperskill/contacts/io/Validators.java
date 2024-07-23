@@ -2,7 +2,6 @@ package gd.hyperskill.contacts.io;
 
 import gd.hyperskill.contacts.enums.*;
 
-import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.regex.Pattern;
 
@@ -13,8 +12,7 @@ public class Validators {
     final Pattern SECOND_GROUP_PHONE_PATTERN = Pattern.compile("\\+?[^\\W_]+([- ]\\([^\\W_]{2,}\\))*([- ][^\\W_]{2,})*");
     final Pattern CONTACT_MENU_OPTIONS_PATTERN = Pattern.compile("^([0-9]+|back)$");
     final Pattern SEARCH_MENU_OPTIONS_PATTERN = Pattern.compile("^[0-9]+$|^back$|^again$");
-
-    final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd");
+    final Pattern DATE_FORMAT_PATTERN = Pattern.compile("^(\\d{4})-(0[1-9]|1[0-2]|[1-9])-([1-9]|0[1-9]|[1-2]\\d|3[0-1])$");
 
     boolean isValidMenuOption(String option) {
         return Arrays.stream(MainMenuOptions.values())
@@ -51,7 +49,8 @@ public class Validators {
     }
 
     boolean isValidBirthDate(String birthDate) {
-        return DATE_FORMAT.toPattern().matches(birthDate);
+        return DATE_FORMAT_PATTERN.matcher(birthDate.trim())
+                .matches();
     }
 
     /* Hyperskill does not provide any concrete validation requirements about the following input */
