@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.regex.Pattern;
 
 public class Validators {
-    final Pattern NAME_PATTERN = Pattern.compile("^[a-zA-Z0-9]+$"); //^[a-zA-Z]\w*$
+    final Pattern NAME_PATTERN = Pattern.compile("^[a-zA-Z0-9\\s]+$"); //^[a-zA-Z]\w*$
     final Pattern GENDER_PATTERN = Pattern.compile("^[mf]$");
     final Pattern FIRST_GROUP_PHONE_PATTERN = Pattern.compile("\\+?\\([^\\W_]+\\)([- ][^\\W_]{2,})*");
     final Pattern SECOND_GROUP_PHONE_PATTERN = Pattern.compile("\\+?[^\\W_]+([- ]\\([^\\W_]{2,}\\))*([- ][^\\W_]{2,})*");
