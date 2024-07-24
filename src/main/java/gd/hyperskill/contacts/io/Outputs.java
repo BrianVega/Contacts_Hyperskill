@@ -29,7 +29,7 @@ public class Outputs {
     }
 
     public void badBirthDate() {
-        System.out.println("Bad birth date!");
+        System.out.println("The date is invalid. Please enter a date in the format YYYY-MM-DD.");
     }
 
     public void enterGender() {
