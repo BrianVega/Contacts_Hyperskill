@@ -121,18 +121,24 @@ public class PhoneBook {
     }
 
     private ContactMenuOptions getContactMenuOptionFrom(Object auxSelectedOption ) {
-        if (auxSelectedOption.equals(ContactMenuOptions.BACK)) {
+        auxSelectedOption = auxSelectedOption.toString();
+        if (auxSelectedOption.equals(ContactMenuOptions.BACK.name())) {
             return ContactMenuOptions.BACK;
+        } else if (auxSelectedOption.equals(ContactMenuOptions.INVALID.name())) {
+            return ContactMenuOptions.INVALID;
         } else {
             return ContactMenuOptions.NUMBER;
         }
     }
 
     private SearchMenuOptions getSearchMenuOptionFrom(Object auxSelectedOption ) {
-        if (auxSelectedOption.equals(SearchMenuOptions.AGAIN)) {
+        auxSelectedOption = auxSelectedOption.toString();
+        if (auxSelectedOption.equals(SearchMenuOptions.AGAIN.name())) {
             return SearchMenuOptions.AGAIN;
-        } else if (auxSelectedOption.equals(SearchMenuOptions.BACK)) {
+        } else if (auxSelectedOption.equals(SearchMenuOptions.BACK.name())) {
             return SearchMenuOptions.BACK;
+        } else if (auxSelectedOption.equals(SearchMenuOptions.INVALID.name())) {
+            return SearchMenuOptions.INVALID;
         } else {
             return SearchMenuOptions.NUMBER;
         }
