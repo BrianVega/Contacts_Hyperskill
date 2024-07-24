@@ -255,7 +255,7 @@ public class PhoneBook {
         Set<Contact> coincidencesSet = new HashSet<>();
         for(Contact contact : this.PHONE_BOOK){
             for(String data : contact.getAllData()){
-                if(data.toLowerCase().contains(searchQuery)){
+                if(data.toLowerCase().contains(searchQuery.toLowerCase())){
                     coincidencesSet.add(contact);
                 }
             }
