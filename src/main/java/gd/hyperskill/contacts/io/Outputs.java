@@ -37,7 +37,7 @@ public class Outputs {
     }
 
     public void badGender(){
-        System.out.println("Bad gender!");
+        System.out.println("The date is invalid. Please enter one of the following options: M, F");
     }
 
     public void enterPhoneNumber() {
