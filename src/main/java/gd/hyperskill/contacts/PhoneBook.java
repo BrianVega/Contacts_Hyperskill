@@ -282,7 +282,7 @@ public class PhoneBook {
             UI.printNoRecordsTo(action);
             return;
         }
-        boolean again = false;
+        boolean again;
         do{
             UI.printEnterSearchQuery();
 
