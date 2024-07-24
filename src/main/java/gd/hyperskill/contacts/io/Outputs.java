@@ -108,6 +108,10 @@ public class Outputs {
         System.out.printf("Found %d results: \n", resultSize);
     }
 
+    public void notFoundRecords() {
+        System.out.println("Not found results");
+    }
+
     public void singleRecord(Contact record) {
         System.out.println(record.showInfoDetail());
     }

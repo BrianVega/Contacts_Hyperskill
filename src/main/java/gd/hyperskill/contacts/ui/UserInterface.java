@@ -223,6 +223,10 @@ public class UserInterface {
         OUTPUTS.foundRecords(resultSize);
     }
 
+    public void printNotFoundRecords() {
+        OUTPUTS.notFoundRecords();
+    }
+
     public void printActionsForSearchOptionMenu() {
         OUTPUTS.actionsForSearchOptionMenu();
     }

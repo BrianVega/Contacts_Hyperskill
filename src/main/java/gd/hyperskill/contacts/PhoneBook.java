@@ -284,6 +284,7 @@ public class PhoneBook {
             List<Contact> searchQueryResult = getAllCoincidences(searchQuery);
             int resultSize = searchQueryResult.size();
             if(resultSize == 0) {
+                UI.printNotFoundRecords();
                 return;
             }
             UI.printFoundRecords(resultSize);
