@@ -116,6 +116,10 @@ public class Outputs {
         System.out.println(record.showInfoDetail());
     }
 
+    public void listedRecord(int index, String contactName) {
+        System.out.println(index + ". " + contactName);
+    }
+
     public void hasRecords(int resultSize){
         System.out.println("The Phone Book has " + resultSize + " records.");
     }

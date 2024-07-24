@@ -231,10 +231,7 @@ public class UserInterface {
         OUTPUTS.actionsForSearchOptionMenu();
     }
 
-    public void printPhoneBookRecords(List<Contact> phoneBookRecords) {
-        for(int index = 0; index < phoneBookRecords.size(); index++) {
-            Contact contact = phoneBookRecords.get(index);
-            System.out.println((index + 1) + ". " + contact.toString());
-        }
+    public void printListedRecord(int index, String contactName) {
+        OUTPUTS.listedRecord(index, contactName);
     }
 }

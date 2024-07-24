@@ -38,7 +38,7 @@ public class PhoneBook {
     }
 
     private void listContactsActionsMenu() {
-        UI.printPhoneBookRecords(PHONE_BOOK);
+        printRecords(PHONE_BOOK);
         UI.printContactActionsMenu();
         Object auxSelectedOption = UI.getContactMenuOption();// UI.getContactMenuOption();
         ContactMenuOptions selectedOption = getContactMenuOptionFrom(auxSelectedOption);
@@ -294,7 +294,7 @@ public class PhoneBook {
                 return;
             }
             UI.printFoundRecords(resultSize);
-            UI.printPhoneBookRecords(searchQueryResult);
+            printRecords(searchQueryResult);
 
             again = actionSearchContactMenu();
         } while (again);
@@ -303,6 +303,13 @@ public class PhoneBook {
 
     private boolean hasRecords() {
         return !this.PHONE_BOOK.isEmpty();
+    }
+
+    private void printRecords(List<Contact> records) {
+        for(int index = 0; index < records.size(); index++) {
+            Contact contact = records.get(index);
+            UI.printListedRecord(index + 1, contact.toString() );
+        }
     }
 
     private void countContacts() {
