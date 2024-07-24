@@ -75,7 +75,7 @@ public class Validators {
     }
 
     boolean isValidContactMenuOptions(String option) {
-        return CONTACT_MENU_OPTIONS_PATTERN.matcher(option).matches();
+        return CONTACT_MENU_OPTIONS_PATTERN.matcher(option.toLowerCase()).matches();
     }
 
     boolean isValidActionForSearchOption(String option) {
